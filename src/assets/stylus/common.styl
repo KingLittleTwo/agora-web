@@ -1,0 +1,73 @@
+@import "./variables.styl"
+.container
+  width 80%
+  margin 0 auto
+  max-width 1400px
+
+.left
+  float left
+.right
+  float right
+
+.clearfix:after
+  content ""
+  display block
+  height 0
+  clear both
+  visibility hidden 
+
+.clearfix
+  zoom 1
+
+// 斜线
+.backslash
+  color $backslash
+  padding 0 10px
+
+// ========================== color beigin======================= 
+.iconfont
+  color #78909C
+  padding: 0 5px
+.main-font-color
+  color $main-color
+.font-info
+  color #5d5d5d
+.font-success
+  color #33CC33
+.font-danger
+  color #FF4500
+.font-primary
+  color #1E90FF
+
+// ========================== color end =========================
+  
+// ========================== form beigin========================
+.form-group
+  display inline-block
+  height 35px
+  .form-control
+    height 100%
+    border 1px solid #dadada
+    border-radius 3px
+    outline none
+    padding 0 10px
+    margin 0 20px
+  .form-controlfocus
+    border  1px solid $main-color
+    box-shadow 0 0 5px $main-color
+
+.form-no-border-group
+  display inline-block
+  height 35px
+  .form-control
+    height 100%
+    border none
+    border-bottom 1px solid #dadada
+    outline none
+    padding 0 10px
+    margin 0 20px
+  .form-controlfocus
+    border-bottom 2px solid $main-color
+
+
+// ========================== form end ==========================
