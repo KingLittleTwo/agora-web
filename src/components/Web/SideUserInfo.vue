@@ -29,6 +29,4 @@
       background red
       border-radius 40px
       margin 30px auto
-
-  
 </style>

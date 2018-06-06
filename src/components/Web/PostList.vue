@@ -10,6 +10,7 @@
         <span class="backslash">/</span>
         <span class="post-nav">分类</span>
     </div>
+
     <div class="post-list">
       <ul>
         <li v-for="(post, item) in postList" :key="item">
@@ -22,7 +23,7 @@
             <p>{{ post.content }}</p>
           </div>
           <div class="post-static-info right">
-            <i class="iconfont icon-atmaway"></i> 
+            <i class="iconfont icon-atmaway"></i>
             <span class="apply-num font-danger">10</span>
             <span class="backslash">/</span>
             <i class="iconfont icon-favorite"></i>
@@ -32,6 +33,12 @@
             <span class="view-num font-primary">200</span>
           </div>
         </li>
+      </ul>
+    </div>
+
+    <div class="page">
+      <ul>
+        <li>1</li>
       </ul>
     </div>
   </div>
@@ -95,4 +102,6 @@ export default {
       display inline-block
       padding-left 20px
       color $common-font-color
+  .page
+    
 </style>

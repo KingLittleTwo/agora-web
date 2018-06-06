@@ -10,6 +10,7 @@
         <recommend></recommend>
       </div>
     </div>
+    <vfooter></vfooter>
   </div>
 </template>
 
@@ -17,13 +18,15 @@
 import Nav from './components/Web/Navigation'
 import UserInfo from '@/components/Web/SideUserInfo'
 import Recommend from '@/components/Web/Recommend'
+import Footer from '@/components/Web/Footer'
 
 export default {
   name: 'App',
   components: {
     vnav: Nav,
     UserInfo,
-    Recommend
+    Recommend,
+    vfooter: Footer
   }
 }
 </script>
