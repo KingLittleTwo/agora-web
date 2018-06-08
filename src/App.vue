@@ -3,6 +3,7 @@
     <vnav></vnav>
     <div class="container main">
       <div class="content">
+        <main-nav></main-nav>
         <router-view></router-view>
       </div>
       <div class="side">
@@ -16,6 +17,7 @@
 
 <script>
 import Nav from './components/Web/Navigation'
+import MainNav from './components/Web/MainNavigation'
 import UserInfo from '@/components/Web/SideUserInfo'
 import Recommend from '@/components/Web/Recommend'
 import Footer from '@/components/Web/Footer'
@@ -24,6 +26,7 @@ export default {
   name: 'App',
   components: {
     vnav: Nav,
+    MainNav,
     UserInfo,
     Recommend,
     vfooter: Footer

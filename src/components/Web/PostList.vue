@@ -1,16 +1,5 @@
 <template>
   <div class="postlist">
-    <div class="post-list-title">
-        <i class="iconfont icon-map"></i>
-        <span class="post-nav active">精华</span>
-        <span class="backslash">/</span>
-        <span class="post-nav">热门</span>
-        <span class="backslash">/</span>
-        <span class="post-nav">最近</span>
-        <span class="backslash">/</span>
-        <span class="post-nav">分类</span>
-    </div>
-
     <div class="post-list">
       <ul>
         <li v-for="(post, item) in postList" :key="item">
@@ -37,9 +26,16 @@
     </div>
 
     <div class="page">
-      <ul>
-        <li>1</li>
-      </ul>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
+      <span>1</span>
     </div>
   </div>
 </template>
@@ -74,17 +70,9 @@ export default {
 @import '../../assets/stylus/common.styl'
 
 .postlist
-  .post-list, .post-list-title
+  .post-list
     background #ffffff
     margin-bottom 10px
-  .post-list-title
-    padding 20px
-    .post-nav:hover
-      color $main-color
-      cursor pointer
-    .active
-      color $main-color
-  .post-list
     li
       height 70px
       line-height 70px
@@ -103,5 +91,14 @@ export default {
       padding-left 20px
       color $common-font-color
   .page
-    
+    text-align center
+    span
+      display inline-block
+      width 34px
+      height 34px
+      line-height 35px
+      border-radius 17px
+      margin-right 2px
+      text-align center
+      background #ffffff
 </style>

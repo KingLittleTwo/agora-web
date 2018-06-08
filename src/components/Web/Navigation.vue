@@ -58,7 +58,8 @@ export default {
       span
         display inline-block
         padding 0 20px
-      span hover
+      span:hover
+        cursor pointer
         background-color #e2e2e2
     .auth
       display inline-block
@@ -70,6 +71,9 @@ export default {
           width 300px
           padding-right 40px
           font-style italic
+        .search:focus
+          box-shadow 0 0 5px $main-color
+          border-color $main-color
         .icon-search
           position relative
           right 50px
