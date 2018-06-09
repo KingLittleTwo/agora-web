@@ -32,7 +32,6 @@ export default {
     }
   }
 }
-  
 </script>
 
 <style lang='stylus'>
@@ -56,5 +55,4 @@ export default {
       overflow hidden
       height 35px
       line-height 35px
-  
 </style>

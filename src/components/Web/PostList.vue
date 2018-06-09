@@ -22,7 +22,7 @@
             <p>{{ post.content }}</p>
           </div>
           <div class="post-static-info right">
-            <i class="iconfont icon-atmaway"></i> 
+            <i class="iconfont icon-atmaway"></i>
             <span class="apply-num font-danger">10</span>
             <span class="backslash">/</span>
             <i class="iconfont icon-favorite"></i>
