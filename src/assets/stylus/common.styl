@@ -2,22 +2,30 @@
 .container
   width 80%
   margin 0 auto
-  max-width 1400px
+  max-width 1200px
 
+.hands
+  cursor pointer
+
+.card
+  background #ffffff
+  margin-bottom 10px
+  padding 30px 20px
+  
 .left
   float left
 .right
   float right
 
-.clearfix:after
+.cl
+  zoom 1
+.cl:after
   content ""
   display block
   height 0
   clear both
-  visibility hidden 
-
-.clearfix
-  zoom 1
+  overflow hidden
+  visibility hidden
 
 // 斜线
 .backslash
@@ -38,22 +46,49 @@
   color #FF4500
 .font-primary
   color #1E90FF
+.font-note
+  color #828282
+  font-size: 12px
 
 // ========================== color end =========================
   
+// ========================== button beigin========================
+.btn
+  padding 5px 15px
+  border none
+  border-radius 3px
+  cursor pointer
+.btn-info
+  color #ffffff
+  background #78909C
+.btn-success
+  color #ffffff
+  background #33CC33
+.btn-danger
+  color #ffffff
+  background #FF4500
+.btn-primary
+  color #ffffff
+  background #1E90FF
+.btn-note
+  color #ffffff
+  background #9a9a9a
+
+// ========================== button end =========================
+
 // ========================== form beigin========================
 .form-group
   display inline-block
   height 35px
   .form-control
     height 100%
-    border 1px solid #dadada
+    border 1px solid $form-color
     border-radius 3px
     outline none
     padding 0 10px
     margin 0 20px
-  .form-controlfocus
-    border  1px solid $main-color
+  .form-control:focus
+    border-color $main-color
     box-shadow 0 0 5px $main-color
 
 .form-no-border-group

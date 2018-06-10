@@ -15,7 +15,8 @@
 @import '../../assets/stylus/variables.styl'
 @import '../../assets/stylus/common.styl'
 
-.main-nav
+@media screen and (min-width: 0)
+  .main-nav
     background #ffffff
     margin-bottom 10px
     padding 20px
@@ -24,4 +25,7 @@
       cursor pointer
     .active
       color $main-color
+@media screen and (max-width: 850px)
+  .main-nav
+    margin-top 10px
 </style>

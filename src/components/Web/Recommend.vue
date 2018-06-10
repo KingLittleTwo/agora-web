@@ -38,21 +38,22 @@ export default {
 @import '../../assets/stylus/variables.styl'
 @import '../../assets/stylus/common.styl'
 
-.recommend
-  background #ffffff
-  margin-bottom 10px
-  padding: 20px
-  .recommend-title
-    margin-bottom 15px
-  .recommend-post-list
-    display block
-    border-top 1px solid $backslash
-    padding-top 10px
-    li
+@media screen and (min-width: 0px)
+  .recommend
+    background #ffffff
+    margin-bottom 10px
+    padding: 20px
+    .recommend-title
+      margin-bottom 15px
+    .recommend-post-list
       display block
-      cursor pointer
-      width inherit
-      overflow hidden
-      height 35px
-      line-height 35px
+      border-top 1px solid $backslash
+      padding-top 10px
+      li
+        display block
+        cursor pointer
+        width inherit
+        overflow hidden
+        height 35px
+        line-height 35px
 </style>

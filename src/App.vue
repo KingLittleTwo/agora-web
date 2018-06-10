@@ -3,7 +3,6 @@
     <vnav></vnav>
     <div class="container main">
       <div class="content">
-        <main-nav></main-nav>
         <router-view></router-view>
       </div>
       <div class="side">
@@ -17,7 +16,6 @@
 
 <script>
 import Nav from './components/Web/Navigation'
-import MainNav from './components/Web/MainNavigation'
 import UserInfo from '@/components/Web/SideUserInfo'
 import Recommend from '@/components/Web/Recommend'
 import Footer from '@/components/Web/Footer'
@@ -26,7 +24,6 @@ export default {
   name: 'App',
   components: {
     vnav: Nav,
-    MainNav,
     UserInfo,
     Recommend,
     vfooter: Footer
@@ -35,23 +32,33 @@ export default {
 </script>
 
 <style lang="stylus">
+html
+  height 100%
 body
   background: #f1f1f1
+  position relative
+  min-height 100%
   a
     text-decoration: none
-  .main
-    display: -webkit-flex
-    display: flex
-    flex-flow: row
-    padding-top: 20px
-    font-size: 14px
-    .content, .side
-      display: inline-block
-    .content
-      margin-right: 20px
-      flex-grow: 1
-    .side
-      flex-grow: 1
-      width: 20%
-      max-width: 300px
+  @media screen and (min-width: 850px)
+    .main
+      display: -webkit-flex
+      display: flex
+      flex-flow: row
+      padding-top: 20px
+      font-size: 14px
+      padding-bottom 220px
+      .content, .side
+        display: inline-block
+      .content
+        margin-right: 10px
+        flex-grow: 1
+      .side
+        flex-grow: 1
+        width: 20%
+        max-width: 300px
+        min-width: 250px
+  @media screen and (max-width: 850px)
+    .main
+      display block
 </style>

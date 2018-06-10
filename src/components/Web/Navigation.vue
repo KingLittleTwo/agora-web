@@ -13,10 +13,10 @@
 
       <div class="auth right">
         <div class="right">
-          <span class="singin">登录</span>
-          <span class="singup">注册</span>
+          <span class="singin hands">登录</span>
+          <span class="singup hands">注册</span>
         </div>
-        <div class="form-group right">
+        <div class="form-group right search-group">
           <input type="text" class="form-control search" name="search" id="search" placeholder="search what you want">
           <i class="iconfont icon-search"></i>
         </div>
@@ -47,12 +47,8 @@ export default {
   box-shadow 1px 1px 5px #cccccc
   border-top 4px solid $main-color
   .container
-    // display flex
     .logo, .nav-bar
       display inline-block
-    // .logo
-    //   flex 1
-    //   width 120px
     .nav-bar
       margin-left 20px
       span
@@ -61,24 +57,28 @@ export default {
       span:hover
         cursor pointer
         background-color #e2e2e2
-    .auth
-      display inline-block
-      min-width 600px
-      font-size 16px
-      .form-group
-          // margin-right  50px
-        .search
-          width 300px
-          padding-right 40px
-          font-style italic
-        .search:focus
-          box-shadow 0 0 5px $main-color
-          border-color $main-color
-        .icon-search
-          position relative
-          right 50px
-          line-height 60px
-        .icon-search:hover
-          color $main-color
-          cursor pointer
+    @media screen and (min-width: 1266px)
+      .auth
+        display inline-block
+        min-width 600px
+        font-size 16px
+        .search-group
+          .search
+            width 300px
+            padding-right 40px
+            font-style italic
+          .icon-search
+            position relative
+            right 60px
+            line-height 60px
+          .icon-search:hover
+            color $main-color
+            cursor pointer
+    @media screen and (max-width: 1266px)
+      .auth
+        display inline-block
+        font-size 16px
+        width 80px
+      .search-group
+        display none
 </style>
