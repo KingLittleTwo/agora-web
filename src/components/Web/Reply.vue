@@ -44,6 +44,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+
+export default {
+  props: [
+  ],
+  created () {
+    axios({
+      method: 'get',
+      // baseUrl: 'api',
+      url: 'http://localhost:8000/api/post_reply/1',
+      dataType: 'jsonp',
+      jsonp: 'callback',
+      data: {
+      }
+    }).then(function (response) {
+      console.log(response)
+    })
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
